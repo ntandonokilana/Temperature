@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparature Convertor</title>
+    <script src="index.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 50px;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: gray;
+    }
+
+    .temparature-icon {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: calc(100% - 10px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .icon {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    button {
+        background-color: yellowgreen;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: seagreen;
+    }
+</style>
+<body>
+    <div class = container>
+       <h1>Temparature Converter</h1>
+
+     <div>
+       <span class="temparature-icon"><i class="fa-temparature-list"></i></span>
+     </div>
+     
+     <div class="clecius">
+        <input type="number" id="celciusInput" placeholder="Clecius" oninput="convertTemparature()">
+        <span class="icon">&#8451</span>
+     </div>
+
+     <div id="fahrenheit">
+        <input type="number" id="fahrenheitInput" placeholder="fahrenheit" oninput="convertTemparature()">
+        <span class="icon">&#8457</span>
+     </div>
+
+     <div class="Kelvin">
+        <input type="number" id="KelvinInput" placeholder="Kelvin" oninput="convertTemparature()">
+        <span class="icon">&#8490</span>
+     </div>
+
+     <div class="button">
+        <button onclick="clearInputs()">Clear</button>
+     </div>
+
+
+
+
+
+
+   </div>
+    
+</body>
+</html>
