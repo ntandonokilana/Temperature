@@ -1,4 +1,4 @@
-function convertTemperature() {
+git function convertTemperature() {
 
     let celsius = parseFloat(document.getElementById('celsiusInput').value) || 0;
     let fahrenheit = parseFloat(document.getElementById('fahrenheitInput').value) || 0;
